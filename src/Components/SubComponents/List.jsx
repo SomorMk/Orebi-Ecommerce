@@ -1,8 +1,8 @@
 import React from 'react'
 
-const List = ({className, children}) => {
+const List = ({className, children, ref}) => {
   return (
-    <ul className={className}>
+    <ul ref={ref} className={className}>
         {children}
     </ul>
   )
