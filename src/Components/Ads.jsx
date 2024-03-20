@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom'
 
 const Ads = () => {
   return (
-    <section className='my-[50px] md:my-[100px]'>
+    <section className='my-[30px] md:my-[50px]'>
           <Container>
-              <Flex className='flex-col sm:flex-row gap-6 xl:gap-10 items-center'>
+              <Flex className='gap-4 xl:gap-10 items-center'>
                   <div className='overflow-hidden'>
                       <Link to='/'><Image src={Ad1} alt='Ads Image' className='hover:scale-[1.05] duration-300' /></Link>
                   </div>
-                  <Flex className='flex-col gap-6 xl:gap-10'>
+                  <Flex className='flex-col gap-2 sm:gap-3 xl:gap-10'>
                       <div className='overflow-hidden'>
                         <Link to='/'><Image src={Ad2} alt='Ads Image' className='hover:scale-[1.05] duration-300' /></Link>
                       </div>

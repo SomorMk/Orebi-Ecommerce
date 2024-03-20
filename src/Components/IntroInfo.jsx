@@ -7,7 +7,7 @@ import { IoReloadSharp } from "react-icons/io5";
 
 const IntroInfo = () => {
   return (
-    <section className='border-b border-[#F0F0F0] py-2 sm:py-5'>
+    <section className='border-b border-[#F0F0F0] pb-2 sm:pb-5 sm:pt-4'>
         <Container>
             <Flex className='justify-between'>
                 <Flex className='items-center gap-1 sm:gap-4'>
