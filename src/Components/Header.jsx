@@ -66,7 +66,7 @@ const Header = () => {
               <p className='text-primary text-xs lg:text-sm font-semibold hidden md:block'>Shop by Category</p>
             </Flex>
 
-            <List className={`absolute top-[200%] left-0 w-[180px] sm:w-[260px] duration-300 ${catagoryModal ? 'block' : 'hidden'}`}>
+            <List className={`absolute top-[200%] left-0 z-10 w-[180px] sm:w-[260px] duration-300 ${catagoryModal ? 'block' : 'hidden'}`}>
               <ListItem className='border-b border-[#3e3e3e]'>
                 <Link to='/' className='py-3 px-4 bg-primary block text-[rgba(255,255,255,0.7)] text-xs sm:text-sm hover:pl-8 hover:text-white hover:font-bold duration-300'>Accesories</Link>
               </ListItem>
@@ -109,7 +109,7 @@ const Header = () => {
                   <BiSolidDownArrow className={`text-[10px] duration-300 ${userModal && 'rotate-180'}`} />
                 </Flex>
 
-                <List className={`absolute top-[270%] sm:top-[200%] right-0 w-[150px] sm:w-[200px] duration-300 ${userModal ? 'block' : 'hidden'}`}>
+                <List className={`absolute top-[270%] sm:top-[200%] right-0 w-[150px] z-10 sm:w-[200px] duration-300 ${userModal ? 'block' : 'hidden'}`}>
                   <ListItem>
                     <Link to='/' className='py-3 px-4 sm:py-4 sm:px-5 text-xs sm:text-sm bg-primary text-white block text-center border border-[#ece6e6]'>My Account</Link>
                   </ListItem>
@@ -126,7 +126,7 @@ const Header = () => {
                   <FaCartShopping className='text-base sm:text-xl' />
                 </div>
 
-                <List className={`absolute top-[250%] sm:top-[200%] right-0 w-[300px] sm:w-[360px] bg-gray-200 border border-[#F0F0F0] ${cartModal ? 'block' : 'hidden'}`}>
+                <List className={`absolute top-[250%] sm:top-[200%] right-0 z-10 w-[300px] sm:w-[360px] bg-gray-200 border border-[#F0F0F0] ${cartModal ? 'block' : 'hidden'}`}>
 
                   <ListItem className='p-5 bg-headerBg'>
                     <Flex className='items-center gap-5 w-full'>

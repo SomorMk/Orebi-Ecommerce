@@ -13,7 +13,10 @@ export default {
       },
       fontFamily: {
         'dm': ['DM Sans', 'sans-serif']
-      }
+      },
+      // backgroundImage: {
+      //   'banner-bg': "url('/images/hero-bg.png')"
+      // }
     },
   },
   plugins: [],
