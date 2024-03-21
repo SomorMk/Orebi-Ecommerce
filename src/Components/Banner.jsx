@@ -102,7 +102,7 @@ const Banner = () => {
 
   return (
     <>
-      <Container className='px-0'>
+      <div className='max-w-[1600px] mx-auto px-0'>
         <Slider {...settings}>
           <div className='w-full'>
             <Link to='/'>
@@ -125,7 +125,7 @@ const Banner = () => {
             </Link>
           </div>
         </Slider>
-      </Container>
+      </div>
     </>
   )
 }
