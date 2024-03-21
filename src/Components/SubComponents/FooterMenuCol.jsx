@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const FooterMenuCol = ({colName,children}) => {
   return (
     <div>
-        <h3 className='text-primary text-base font-bold uppercase'>{colName}</h3>
+        <h3 className='text-primary text-xs lg:text-base font-bold uppercase'>{colName}</h3>
         <ul className='mt-4'>
             {children}
         </ul>
