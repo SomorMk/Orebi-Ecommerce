@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import Image from './SubComponents/Image'
+import Container from './SubComponents/Container'
 import BannerImg from '/images/banner.png'
 import { Link } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ const Banner = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: 'linear',
-    beforeChange: (prev, next) =>{
+    beforeChange: (prev, next) => {
       setActiveDot(next)
     },
     appendDots: dots => (
@@ -50,7 +51,7 @@ const Banner = () => {
             padding: '8px 0',
             cursor: 'pointer'
           }
-      }
+        }
       >
         0{i + 1}
       </div>
@@ -89,7 +90,7 @@ const Banner = () => {
                   padding: '1px 0',
                   cursor: 'pointer'
                 }
-            }
+              }
             >
               0{i + 1}
             </div>
@@ -101,28 +102,30 @@ const Banner = () => {
 
   return (
     <>
-      <Slider {...settings}>
-        <div className='w-full'>
-          <Link to='/'>
-            <Image src={BannerImg} alt='Banner Image' className='w-full' />
-          </Link>
-        </div>
-        <div className='w-full'>
-          <Link to='/'>
-            <Image src={BannerImg} alt='Banner Image' className='w-full' />
-          </Link>
-        </div>
-        <div className='w-full'>
-          <Link to='/'>
-            <Image src={BannerImg} alt='Banner Image' className='w-full' />
-          </Link>
-        </div>
-        <div className='w-full'>
-          <Link to='/'>
-            <Image src={BannerImg} alt='Banner Image' className='w-full' />
-          </Link>
-        </div>
-      </Slider>
+      <Container className='px-0'>
+        <Slider {...settings}>
+          <div className='w-full'>
+            <Link to='/'>
+              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            </Link>
+          </div>
+          <div className='w-full'>
+            <Link to='/'>
+              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            </Link>
+          </div>
+          <div className='w-full'>
+            <Link to='/'>
+              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            </Link>
+          </div>
+          <div className='w-full'>
+            <Link to='/'>
+              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            </Link>
+          </div>
+        </Slider>
+      </Container>
     </>
   )
 }

@@ -13,14 +13,14 @@ const Ads = () => {
           <Container>
               <Flex className='gap-4 xl:gap-10 items-center'>
                   <div className='overflow-hidden'>
-                      <Link to='/'><Image src={Ad1} alt='Ads Image' className='hover:scale-[1.05] duration-300' /></Link>
+                      <Link to='/'><Image src={Ad1} alt='Ads Image' className='hover:scale-[1.02] duration-300' /></Link>
                   </div>
                   <Flex className='flex-col gap-2 sm:gap-3 xl:gap-10'>
                       <div className='overflow-hidden'>
-                        <Link to='/'><Image src={Ad2} alt='Ads Image' className='hover:scale-[1.05] duration-300' /></Link>
+                        <Link to='/'><Image src={Ad2} alt='Ads Image' className='hover:scale-[1.02] duration-300' /></Link>
                       </div>
                       <div className='overflow-hidden'>
-                        <Link to='/'><Image src={Ad3} alt='Ads Image' className='hover:scale-[1.05] duration-300' /></Link>
+                        <Link to='/'><Image src={Ad3} alt='Ads Image' className='hover:scale-[1.02] duration-300' /></Link>
                       </div>
                   </Flex>
               </Flex>
