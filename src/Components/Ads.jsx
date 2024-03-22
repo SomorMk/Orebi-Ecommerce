@@ -11,11 +11,11 @@ const Ads = () => {
   return (
     <section className='my-[30px] md:my-[50px]'>
           <Container>
-              <Flex className='gap-4 xl:gap-10 items-center'>
+              <Flex className='gap-x-4 xl:gap-x-10 items-center'>
                   <div className='overflow-hidden'>
                       <Link to='/'><Image src={Ad1} alt='Ads Image' className='hover:scale-[1.02] duration-300' /></Link>
                   </div>
-                  <Flex className='flex-col gap-2 sm:gap-3 xl:gap-10'>
+                  <Flex className='flex-col gap-y-2 sm:gap-y-3 xl:gap-y-10'>
                       <div className='overflow-hidden'>
                         <Link to='/'><Image src={Ad2} alt='Ads Image' className='hover:scale-[1.02] duration-300' /></Link>
                       </div>

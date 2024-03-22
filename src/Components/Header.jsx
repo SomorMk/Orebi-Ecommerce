@@ -93,7 +93,7 @@ const Header = () => {
 
             <input type="text" placeholder='Search Products' className='sm:w-[300px] md:w-[420px] lg:w-[500px] pl-2 pr-10 sm:pl-5 sm:pr-14 py-3 bg-white placeholder:text-[#C4C4C4] text-xs sm:text-sm rounded-md' />
 
-            <div className='absolute top-[50%] right-2 translate-y-[-50%] p-2 rounded-full hover:bg-[#F5F5F3] duration-300'>
+            <div className='absolute top-[50%] right-2 translate-y-[-50%] p-2 rounded-full hover:bg-[#F5F5F3] duration-300 cursor-pointer'>
               <IoSearch className='text-base sm:text-xl text-primary' />
             </div>
 

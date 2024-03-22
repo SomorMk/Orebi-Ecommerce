@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductShowcase from './SubComponents/ProductShowcase'
 import Container from './SubComponents/Container'
 import DisplayProduct from './SubComponents/DisplayProduct'
-import product1 from '/images/products/product (1).png'
-import product2 from '/images/products/product (2).png'
-import product3 from '/images/products/product (3).png'
-import product4 from '/images/products/product (4).png'
+import productData from '../assets/productList.json'
 
 const NewArrival = () => {
+  let [data, setData] = useState([])
+
+  useEffect(() => {
+    let arr = [...productData.newArrival];
+    setData(arr);
+  }, [])
+  
+
+
   return (
     <section className='my-8 md:my-[80px]'>
         <Container>
             <ProductShowcase shoeCaseName='New Arrival'>
-                <DisplayProduct name='Basic Crew Neck Tee' price='$44.00' image={product1} color='Black' tag='new' />
-                <DisplayProduct name='Basic Crew Neck Tee' price='$44.00' image={product2} color='Black' tag='new' />
-                <DisplayProduct name='Basic Crew Neck Tee' price='$44.00' image={product3} color='Black' tag='new' />
-                <DisplayProduct name='Basic Crew Neck Tee' price='$44.00' image={product4} color='Black' tag='new' />
+
+              {data.map((data, key)=>(
+                <DisplayProduct link={data.link} name={data.name} price={data.price} image={data.image} color={data.colour} tag={data.tag} itemKey={key+1} />
+              ))}
+              
             </ProductShowcase>
         </Container>
     </section>
