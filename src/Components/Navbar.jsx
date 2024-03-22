@@ -48,7 +48,7 @@ const Navbar = () => {
                                     <Link to='/contact' onClick={navModalControl} className='text-sm text-secondary font-dm hover:text-primary hover:font-bold duration-300'>Contact</Link>
                                 </ListItem>
                                 <ListItem className='my-2 sm:my-0'>
-                                    <Link to='/' onClick={navModalControl} className='text-sm text-secondary font-dm hover:text-primary hover:font-bold duration-300'>Journal</Link>
+                                    <Link to='/journal' onClick={navModalControl} className='text-sm text-secondary font-dm hover:text-primary hover:font-bold duration-300'>Journal</Link>
                                 </ListItem>
                             </List>
                         </div>

@@ -85,7 +85,7 @@ const Contact = () => {
 
                         {
                             officeAddress.map((office, index) => (
-                                <div onClick={()=>setCurrentOffice(office.name)} class="w-full group flex flex-col gap-2 bg-white text-black border-b border-[#F0F0F0] py-4 md:py-7 px-5" tabindex={index+1} >
+                                <div onClick={()=>setCurrentOffice(office.name)} class="w-full select-text group flex flex-col gap-2 bg-white text-black border-b border-[#F0F0F0] py-4 md:py-7 px-5" tabindex={index+1} >
                                     <div class="flex cursor-pointer items-center justify-between">
                                         <span className='text-sm sm:text-base text-primary font-bold'>{office.name}</span>
                                         <FaPlus />

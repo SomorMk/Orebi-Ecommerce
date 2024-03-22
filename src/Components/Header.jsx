@@ -11,7 +11,7 @@ import List from './SubComponents/List'
 import ListItem from './SubComponents/ListItem'
 import { Link } from 'react-router-dom';
 import Image from './SubComponents/Image'
-import CartImage from '../assets/cart-image.png'
+import CartImage from '/images/cart-image.png'
 
 const Header = () => {
   let [catagoryModal, setcatagoryModal] = useState(false)
