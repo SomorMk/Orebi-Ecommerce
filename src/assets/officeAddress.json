@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Germany Office",
+        "address": "575 Crescent Ave. Quakertown, PA 18951",
+        "number": "+432 533 12 523",
+        "mail": "info@domain.com",
+        "officeHour": "Mon - Fri: 9am - 6pm",
+        "officeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.9988599474996!2d90.42057767844884!3d23.783054932490057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7292b9ea7fd%3A0x723922bd5147b52c!2sGermany%20Visa%20Application%20Center!5e0!3m2!1sen!2sbd!4v1711131468577!5m2!1sen!2sbd"
+    },
+    {
+        "name": "Slovakia Office",
+        "address": "575 Crescent Ave. Quakertown, PA 18951",
+        "number": "+432 533 12 523",
+        "mail": "info@domain.com",
+        "officeHour": "Mon - Fri: 9am - 6pm",
+        "officeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1702543956867!2d90.38000527484549!3d23.741307389126312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b7a55cd36f%3A0xfcc5b021faff43ea!2sCreative%20IT%20Institute!5e0!3m2!1sen!2sbd!4v1711124410895!5m2!1sen!2sbd"
+    },
+    {
+        "name": "Lithuania Office",
+        "address": "575 Crescent Ave. Quakertown, PA 18951",
+        "number": "+432 533 12 523",
+        "mail": "info@domain.com",
+        "officeHour": "Mon - Fri: 9am - 6pm",
+        "officeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.1467049214216!2d25.27595507636978!3d54.68944597338907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd940ff6d5983d%3A0x2563401f9be82400!2sLithuanian%20National%20Opera%20and%20Ballet%20Theatre!5e0!3m2!1sen!2sbd!4v1711131515812!5m2!1sen!2sbd"
+    }
+]
