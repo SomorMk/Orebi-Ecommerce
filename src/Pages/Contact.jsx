@@ -73,7 +73,7 @@ const Contact = () => {
 
                     <div className='w-full h-[200px] sm:h-[400px] md:h-[572px]'>
                         {
-                            officeAddress.map((item)=>(
+                            officeAddress.map((item, index)=>(
                                 currentOffice == item.name && (
                                     <Map link={item.officeLocation} />
                                 )

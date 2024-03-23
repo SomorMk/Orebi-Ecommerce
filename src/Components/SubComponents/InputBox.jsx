@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = (props) => {
+const InputBox = (props) => {
   return (
     <div>
         <h6 className='text-primary text-sm sm:text-base font-bold'>{props.title}</h6>
@@ -9,4 +9,12 @@ const Input = (props) => {
   )
 }
 
-export default Input
+export const FormHead = ({name, className}) => {
+  return (
+    <div>
+        <h2 className={`text-xl sm:text-[39px] text-primary font-bold ${className}`}>{name}</h2>
+    </div>
+  )
+}
+
+export default InputBox

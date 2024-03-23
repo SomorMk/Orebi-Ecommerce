@@ -28,9 +28,6 @@ const Header = () => {
       (()=>{
         if (!catagoryRef.current.contains(e.target)) {
           setcatagoryModal(false)
-          console.log('1');
-        } else{
-          console.log(e.target);
         }
       })();
 
@@ -111,7 +108,7 @@ const Header = () => {
 
                 <List className={`absolute top-[270%] sm:top-[200%] right-0 w-[150px] z-10 sm:w-[200px] duration-300 ${userModal ? 'block' : 'hidden'}`}>
                   <ListItem>
-                    <Link to='/' className='py-3 px-4 sm:py-4 sm:px-5 text-xs sm:text-sm bg-primary text-white block text-center border border-[#ece6e6]'>My Account</Link>
+                    <Link to='/login' className='py-3 px-4 sm:py-4 sm:px-5 text-xs sm:text-sm bg-primary text-white block text-center border border-[#ece6e6]'>My Account</Link>
                   </ListItem>
                   <ListItem>
                     <Link to='/' className='py-3 px-4 sm:py-4 sm:px-5 text-xs sm:text-sm bg-white text-primary block text-center border border-[#ece6e6]'>Log Out</Link>
