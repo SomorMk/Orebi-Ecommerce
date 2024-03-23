@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Breadcrumb from '../Components/SubComponents/Breadcrumb'
 import Container from '../Components/SubComponents/Container'
 import Flex from '../Components/SubComponents/Flex'
@@ -6,6 +6,35 @@ import InputBox, { FormHead } from '../Components/SubComponents/InputBox'
 import Button, { ButtonLink, ButtonW } from '../Components/SubComponents/Button'
 
 const Login = () => {
+    let [email, setEmail] = useState('')
+    let [password, setPassword] = useState('')
+
+    let [emailErr, setEmailErr] = useState(false)
+    let [passwordErr, setPasswordErr] = useState(false)
+
+
+    let handelEmailChange = (e) => {
+        setEmail(e.target.value);
+        setEmailErr(false)
+    }
+    let handelPasswordChange = (e) => {
+        setPassword(e.target.value);
+        setPasswordErr(false)
+    }
+
+    let handelLogin = ()=>{
+        (() => {
+            if (!email) {
+                setEmailErr(true)
+            }
+        })();
+        (() => {
+            if (!password) {
+                setPasswordErr(true)
+            }
+        })();
+    }
+    
   return (
     <>
         <Breadcrumb />
@@ -22,15 +51,15 @@ const Login = () => {
 
                     <Flex className='max-w-full lg:max-w-[70%] w-full gap-y-8 sm:gap-y-0 gap-x-10 mt-10 flex-col sm:flex-row'>
                         <div className='max-w-full sm:max-w-[50%] w-full'>
-                            <InputBox as='input' title='Email address' type='email' placeholder='company@domain.com' />
+                            <InputBox onChange={handelEmailChange} as='input' title='Email address' type='email' placeholder='company@domain.com' className={`${emailErr && '!border-red-500 border-b-[2px]'}`} />
                         </div>
                         <div className='max-w-full sm:max-w-[50%] w-full'>
-                            <InputBox as='input' title='Password' type='password' placeholder='********' />
+                            <InputBox onChange={handelPasswordChange} as='input' title='Password' type='password' placeholder='********' className={`${passwordErr && '!border-red-500 border-b-[2px]'}`} />
                         </div>
                     </Flex>
 
                     <div className='mt-8'>
-                        <ButtonW name='Log in' />
+                        <ButtonW onClick={handelLogin} name='Log in' />
                     </div>
 
                 </div>
