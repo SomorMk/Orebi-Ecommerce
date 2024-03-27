@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Breadcrumb from '../Components/SubComponents/Breadcrumb'
 import Container from '../Components/SubComponents/Container'
 import InputBox, { FormHead, Option, SelectBox } from '../Components/SubComponents/InputBox'
@@ -8,12 +8,23 @@ import bdDivisions from '../assets/bd-divisions.json'
 import bdDistricts from '../assets/bd-districts.json'
 
 const SignUp = () => {
+  let [selectedDivision, setSelectedDivision] = useState('')
+  let [selectedDistrict, setSelectedDistrict] = useState('')
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   let diviArr = bdDivisions.divisions
   let districts = bdDistricts.districts
+
+  let divisionFilter = (e)=>{
+    setSelectedDivision(e.target.value);
+  }
+
+  let districtFilter = (e)=>{
+    setSelectedDistrict(e.target.value);
+  }
 
 
   return (
@@ -66,7 +77,7 @@ const SignUp = () => {
               </div>
               <div className='max-w-full lg:max-w-[50%] w-full md:w-[70%] lg:w-[48%]'>
                 <h6 className='text-primary text-sm sm:text-base font-bold'>Division</h6>
-                <SelectBox>
+                <SelectBox onChange={divisionFilter}>
                   <Option name='Please select' value='' />
                   {
                     diviArr.map((i, id) => (
@@ -77,7 +88,7 @@ const SignUp = () => {
               </div>
               <div className='max-w-full lg:max-w-[50%] w-full md:w-[70%] lg:w-[48%]'>
                 <h6 className='text-primary text-sm sm:text-base font-bold'>District</h6>
-                <SelectBox>
+                <SelectBox onChange={districtFilter}>
                   <Option name='Please select' value='' />
                   {
                     districts.map((i, id) => (
