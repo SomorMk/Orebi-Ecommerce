@@ -15,16 +15,16 @@ export const FormHead = ({ name, className }) => {
   )
 }
 
-export const SelectBox = ({ children, className }) => {
+export const SelectBox = ({ children, className, onChange, onClick }) => {
   return (
-    <select className={`${className} py-2 sm:py-4 border-b border-[#dadada] w-full outline-none`}>
+    <select onChange={onChange} onClick={onClick} className={`${className} py-2 sm:py-4 border-b border-[#dadada] w-full outline-none`}>
       {children}
     </select>
   )
 }
-export const Option = ({name, value, className }) => {
+export const Option = ({name, value, className, onChange, onClick }) => {
   return (
-    <option value={value} className={`${className}`} >{name}</option>
+    <option onChange={onChange} onClick={onClick} value={value} className={`${className}`} >{name}</option>
   )
 }
 

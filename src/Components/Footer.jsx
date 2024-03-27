@@ -19,10 +19,10 @@ const Footer = () => {
                     <div className='w-4/12'>
                         <FooterMenuCol colName='menu'>
                             <FooterMenuItem itemName='Home' to='/' />
-                            <FooterMenuItem itemName='Shop' to='/' />
-                            <FooterMenuItem itemName='About' to='/' />
-                            <FooterMenuItem itemName='Contact' to='/' />
-                            <FooterMenuItem itemName='Journal' to='/' />
+                            <FooterMenuItem itemName='Shop' to='/shop' />
+                            <FooterMenuItem itemName='About' to='/about' />
+                            <FooterMenuItem itemName='Contact' to='/contact' />
+                            <FooterMenuItem itemName='Journal' to='/journal' />
                         </FooterMenuCol>
                     </div>
                     <div className='w-4/12'>

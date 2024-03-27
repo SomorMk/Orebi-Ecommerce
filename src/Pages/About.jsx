@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Breadcrumb from '../Components/SubComponents/Breadcrumb'
 import Container from '../Components/SubComponents/Container'
 import Flex from '../Components/SubComponents/Flex'
@@ -8,6 +8,10 @@ import AboutImg2 from '/images/about-2.png'
 import Button from '../Components/SubComponents/Button'
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <>
       <Breadcrumb />

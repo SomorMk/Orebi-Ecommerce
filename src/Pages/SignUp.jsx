@@ -8,9 +8,13 @@ import bdDivisions from '../assets/bd-divisions.json'
 import bdDistricts from '../assets/bd-districts.json'
 
 const SignUp = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   let diviArr = bdDivisions.divisions
   let districts = bdDistricts.districts
-  
+
 
   return (
     <>
@@ -65,7 +69,7 @@ const SignUp = () => {
                 <SelectBox>
                   <Option name='Please select' value='' />
                   {
-                    diviArr.map((i, id)=>(
+                    diviArr.map((i, id) => (
                       <Option name={i.name} value={i.name} />
                     ))
                   }
@@ -76,7 +80,7 @@ const SignUp = () => {
                 <SelectBox>
                   <Option name='Please select' value='' />
                   {
-                    districts.map((i, id)=>(
+                    districts.map((i, id) => (
                       <Option name={i.name} value={i.name} />
                     ))
                   }

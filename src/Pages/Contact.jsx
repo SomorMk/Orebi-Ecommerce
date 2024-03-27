@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Breadcrumb from '../Components/SubComponents/Breadcrumb'
 import Container from '../Components/SubComponents/Container'
 import InputBox from '../Components/SubComponents/InputBox'
@@ -9,8 +9,12 @@ import { FaPlus } from "react-icons/fa6";
 import officeAddress from '../assets/officeAddress.json'
 
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     let [currentOffice, setCurrentOffice] = useState(officeAddress[0].name)
-    
+
     let [name, setName] = useState('')
     let [email, setEmail] = useState('')
     let [message, setMessage] = useState('')
@@ -73,7 +77,7 @@ const Contact = () => {
 
                     <div className='w-full h-[200px] sm:h-[400px] md:h-[572px]'>
                         {
-                            officeAddress.map((item, index)=>(
+                            officeAddress.map((item, index) => (
                                 currentOffice == item.name && (
                                     <Map link={item.officeLocation} />
                                 )
@@ -85,7 +89,7 @@ const Contact = () => {
 
                         {
                             officeAddress.map((office, index) => (
-                                <div onClick={()=>setCurrentOffice(office.name)} class="w-full select-text group flex flex-col gap-2 bg-white text-black border-b border-[#F0F0F0] py-4 md:py-7 px-5" tabindex={index+1} >
+                                <div onClick={() => setCurrentOffice(office.name)} class="w-full select-text group flex flex-col gap-2 bg-white text-black border-b border-[#F0F0F0] py-4 md:py-7 px-5" tabindex={index + 1} >
                                     <div class="flex cursor-pointer items-center justify-between">
                                         <span className='text-sm sm:text-base text-primary font-bold'>{office.name}</span>
                                         <FaPlus />

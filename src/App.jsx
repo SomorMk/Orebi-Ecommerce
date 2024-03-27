@@ -13,6 +13,7 @@ import Contact from './Pages/Contact';
 import Journal from './Pages/Journal';
 import Login from './Pages/Login';
 import SignUp from './Pages/SignUp';
+import MyAccount from './Pages/MyAccount';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,8 @@ const router = createBrowserRouter(
       <Route path='/login' element={<Login />} ></Route>
 
       <Route path='/signup' element={<SignUp />} ></Route>
+
+      <Route path='/my-account' element={<MyAccount />} ></Route>
 
     </Route>
   )

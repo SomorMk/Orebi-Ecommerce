@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Breadcrumb from '../Components/SubComponents/Breadcrumb'
 import Container from '../Components/SubComponents/Container'
 import Flex from '../Components/SubComponents/Flex'
@@ -6,6 +6,10 @@ import InputBox, { FormHead } from '../Components/SubComponents/InputBox'
 import Button, { ButtonLink, ButtonW } from '../Components/SubComponents/Button'
 
 const Login = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     let [email, setEmail] = useState('')
     let [password, setPassword] = useState('')
 
