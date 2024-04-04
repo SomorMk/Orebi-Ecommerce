@@ -7,9 +7,9 @@ import { FaCodeCompare } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
 import DemoProductImg from '/images/products/demo-product.png'
 
-const DisplayProduct = ({ link, image, tag, name, price, color, itemKey }) => {
+const DisplayProduct = ({ link, image, tag, name, price, color, itemKey, className }) => {
   return (
-    <div className='group w-1/2 md:w-1/3 lg:w-1/4 px-2 lg:px-4 mb-5 lg:mb-0'>
+    <div className={`group w-1/2 md:w-1/3 lg:w-1/4 px-2 lg:px-4 mb-5 lg:mb-0 ${className}`}>
       <div className='overflow-hidden relative'>
         {image ? <Image src={image} alt='Product Image' className='w-full max-w-full group-hover:scale-105 duration-300' /> : <Image src={DemoProductImg} alt='Product Image' className='w-full max-w-full' />}
         <Flex className='absolute top-0 left-0 p-2 md:p-5 gap-5'>
@@ -28,11 +28,11 @@ const DisplayProduct = ({ link, image, tag, name, price, color, itemKey }) => {
       </div>
       <div className='py-2 sm:py-4'>
         <Link to={link}>
-          <Flex className='flex-col sm:flex-row sm:justify-between mb-1 sm:mb-4'>
-            {name ? <h4 className='text-[10px] sm:text-xl text-primary font-bold'>{name}</h4>:<h4 className='text-[10px] sm:text-xl text-primary font-bold'>Product Name</h4>}
-            {price ? <p className='text-[8px] sm:text-base text-[#767676]'>{price}</p> : <p className='text-[8px] sm:text-base text-[#767676]'>Price</p>}
+          <Flex className='flex-col sm:flex-row sm:justify-between mb-1 sm:mb-2 md:mb-4'>
+            {name ? <h4 className='text-[10px] sm:text-sm md:text-xl text-primary font-bold'>{name}</h4>:<h4 className='text-[10px] sm:text-xl text-primary font-bold'>Product Name</h4>}
+            {price ? <p className='text-[8px] sm:text-xs md:text-base text-[#767676]'>${price}</p> : <p className='text-[8px] sm:text-base text-[#767676]'>Price</p>}
           </Flex>
-          {color ? <p className='text-[10px] sm:text-base text-[#767676]'>{color}</p> : <p className='text-[10px] sm:text-base text-[#767676]'>Colour</p>}
+          {color ? <p className='text-[10px] sm:text-xs md:text-base text-[#767676]'>{color}</p> : <p className='text-[10px] sm:text-base text-[#767676]'>Colour</p>}
         </Link>
       </div>
     </div>

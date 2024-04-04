@@ -1,4 +1,5 @@
 import React from 'react'
+import Flex from './Flex'
 
 const InputBox = (props) => {
   return (
@@ -8,6 +9,7 @@ const InputBox = (props) => {
     </div>
   )
 }
+export default InputBox
 
 export const FormHead = ({ name, className }) => {
   return (
@@ -22,10 +24,25 @@ export const SelectBox = ({ children, className, onChange, onClick }) => {
     </select>
   )
 }
-export const Option = ({name, value, className, onChange, onClick }) => {
+export const Option = ({ name, value, className, onChange, onClick }) => {
   return (
     <option onChange={onChange} onClick={onClick} value={value} className={`${className}`} >{name}</option>
   )
 }
 
-export default InputBox
+
+export const ShopSelectBox = ({ title, children, className, onChange, onClick }) => {
+  return (
+    <Flex className='gap-x-2 md:gap-x-5 items-center'>
+      <p className='text-[10px] sm:text-xs md:text-base text-secondary'>{title}</p>
+      <select onChange={onChange} onClick={onClick} className={`${className} text-[10px] md:text-base text-secondary border-2 border-[#F0F0F0] py-1 md:py-2 md:px-2 focus-visible:border-[#F0F0F0] focus-visible:outline-[#F0F0F0]`}>
+        {children}
+      </select>
+    </Flex>
+  )
+}
+export const ShopOption = ({ name, value, className, onChange, onClick }) => {
+  return (
+    <option onChange={onChange} onClick={onClick} value={value} className={`${className} text-[10px] md:text-base text-secondary bg-[#F0F0F0] border-none`} >{name}</option>
+  )
+}
