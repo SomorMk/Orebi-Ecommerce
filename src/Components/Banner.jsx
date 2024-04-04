@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import Image from './SubComponents/Image'
 import Container from './SubComponents/Container'
-import BannerImg from '/images/banner.png'
+import BannerImg1 from '/images/banner1.png'
+import BannerImg2 from '/images/banner2.png'
+import BannerImg3 from '/images/banner3.png'
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -105,23 +107,23 @@ const Banner = () => {
       <div className='max-w-[1600px] mx-auto px-0'>
         <Slider {...settings}>
           <div className='w-full'>
-            <Link to='/'>
-              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            <Link to='/' className='outline-0'>
+              <Image src={BannerImg2} alt='Banner Image' className='w-full' />
             </Link>
           </div>
           <div className='w-full'>
-            <Link to='/'>
-              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            <Link to='/' className='outline-0'>
+              <Image src={BannerImg1} alt='Banner Image' className='w-full' />
             </Link>
           </div>
           <div className='w-full'>
-            <Link to='/'>
-              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            <Link to='/' className='outline-0'>
+              <Image src={BannerImg3} alt='Banner Image' className='w-full' />
             </Link>
           </div>
           <div className='w-full'>
-            <Link to='/'>
-              <Image src={BannerImg} alt='Banner Image' className='w-full' />
+            <Link to='/' className='outline-0'>
+              <Image src={BannerImg1} alt='Banner Image' className='w-full' />
             </Link>
           </div>
         </Slider>

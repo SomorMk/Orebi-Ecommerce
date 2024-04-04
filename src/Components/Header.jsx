@@ -63,7 +63,7 @@ const Header = () => {
               <p className='text-primary text-xs lg:text-sm font-semibold hidden md:block'>Shop by Category</p>
             </Flex>
 
-            <List className={`absolute top-[200%] left-0 z-10 w-[180px] sm:w-[260px] duration-300 ${catagoryModal ? 'block' : 'hidden'}`}>
+            <List className={`absolute top-[200%] z-10 w-[180px] sm:w-[260px] duration-300 ${catagoryModal ? 'left-0' : 'left-[-350px]'}`}>
               <ListItem className='border-b border-[#3e3e3e]'>
                 <Link to='/' className='py-3 px-4 bg-primary block text-[rgba(255,255,255,0.7)] text-xs sm:text-sm hover:pl-8 hover:text-white hover:font-bold duration-300'>Accesories</Link>
               </ListItem>

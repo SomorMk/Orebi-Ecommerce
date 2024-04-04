@@ -11,8 +11,8 @@ const Breadcrumb = () => {
         <Container>
             <h1 className='text-primary text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-5 capitalize'>{path}</h1>
             <Flex className='items-center gap-x-1'>
-                <Link to='/'><span className='text-xs sm:text-sm text-secondary hover:text-primary'>Home</span></Link>
-                <IoIosArrowForward className='text-xs sm:text-sm text-secondary' />
+                <Link to='/' className='leading-none'><span className='text-xs sm:text-sm text-secondary hover:text-primary'>Home</span></Link>
+                <span><IoIosArrowForward className='text-xs sm:text-sm text-secondary' /></span>
                 <span className='capitalize text-xs sm:text-sm text-secondary'>{path}</span>
             </Flex>
         </Container>

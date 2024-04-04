@@ -11,15 +11,15 @@ const IntroInfo = () => {
         <Container>
             <Flex className='justify-between'>
                 <Flex className='items-center gap-1 sm:gap-4'>
-                    <div><RiNumber2 className='text-primary text-sm lg:text-2xl'/></div>
+                    <div className='hidden lg:block'><RiNumber2 className='text-primary text-sm lg:text-2xl'/></div>
                     <h6 className='text-[8px] lg:text-base text-[#6D6D6D]'>Two years warranty</h6>
                 </Flex>
                 <Flex className='items-center gap-1 sm:gap-4'>
-                    <div><FaTruck className='text-primary text-sm lg:text-2xl'/></div>
+                    <div className='hidden lg:block'><FaTruck className='text-primary text-sm lg:text-2xl'/></div>
                     <h6 className='text-[8px] lg:text-base text-[#6D6D6D]'>Free shipping</h6>
                 </Flex>
                 <Flex className='items-center gap-1 sm:gap-4'>
-                    <div><IoReloadSharp className='text-primary text-sm lg:text-2xl'/></div>
+                    <div className='hidden lg:block'><IoReloadSharp className='text-primary text-sm lg:text-2xl'/></div>
                     <h6 className='text-[8px] lg:text-base text-[#6D6D6D]'>Return policy in 30 days</h6>
                 </Flex>
             </Flex>
