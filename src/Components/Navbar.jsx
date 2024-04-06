@@ -59,7 +59,7 @@ const Navbar = () => {
                                 <ListItem className='my-2 sm:my-0'>
                                     <Link to='/journal' onClick={navModalControl} className={`text-sm text-secondary font-dm hover:font-bold duration-300 ${currentActive == '/journal' && 'text-black text-base font-bold'}`}>Journal</Link>
                                 </ListItem>
-                                <div className='text-center mt-20'>
+                                <div className='text-center mt-20 sm:hidden'>
                                     <Image src='images/logo.png' alt='Site Logo' className='w-[100px]' />
                                     <ul className='flex gap-x-5 mt-8'>
                                         <li><Link><FaFacebookF className='text-sm lg:text-base text-primary hover:scale-125 duration-300' /></Link></li>
