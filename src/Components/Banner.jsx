@@ -104,7 +104,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className='max-w-[1600px] mx-auto px-0'>
+      <div>
         <Slider {...settings}>
           <div className='w-full'>
             <Link to='/' className='outline-0'>
